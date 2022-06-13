@@ -1,0 +1,13 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: rgb(52, 80, 54);
+
+body {
+  font: 100% $font-stack;
+  background-color: rgb(52, 80, 54);
+  color: $primary-color;
+}
+
+h2{
+    font-family: 'Inconsolata', monospace;
+}
+

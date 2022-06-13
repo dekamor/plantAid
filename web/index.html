@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+</head>
+<html>
+    <body>
+        <script src="script.js"></script>
+
+        <h1>PlantAid</h1>
+        <h2>Click the button below to update your webpage with most recent readings</h2>
+
+
+        <button class="square_btn"  onclick="myFunction()"> test </button>
+
+        <p id="date"></p>
+        <p id="time"></p>
+        <p id="moisture"> </p>
+        <p id="temp"> </p>
+        <p id="humidity"> </p>
+
+        
+
+        <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+        <script crossorigin src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBlUhI6yT3-F0sPkACivkEBOvkWHVI2a0o",
+                authDomain: "plantaid-rvln.firebaseapp.com",
+                projectId: "plantaid-rvln",
+            };
+            firebase.initializeApp(config);
+            
+            // make auth and firestore references
+            //const auth = firebase.auth();
+            const db = firebase.firestore();
+
+            // update firestore settings
+            db.settings({ timestampsInSnapshots: true });
+        </script>
+
+
+    </body>
+</html>

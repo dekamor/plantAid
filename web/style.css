@@ -1,0 +1,45 @@
+
+
+body {
+    font-family: 'Inconsolata', monospace;
+}
+
+h1{
+    font-family: 'Inconsolata', monospace;
+    font-size:6vw
+}
+
+h2{
+    font-family: 'Inconsolata', monospace;
+    font-size:5vw
+}
+
+p {
+    font-size:4vw
+}
+
+.square_btn {
+    font-family: 'Inconsolata', monospace;
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #1d530d;
+    background-color: white;
+    border: solid 2px #1d530d;
+    border-radius: 3px;
+    transition: .3s;
+    font-size: 3vw;
+    margin: 0 auto;
+    display:block
+
+}
+
+
+
+
+.square_btn:hover {
+    background: #1d530d;
+    color: white;
+}
+
+
