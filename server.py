@@ -1,5 +1,3 @@
-# echo-server.py
-
 import socket
 
 import firebase_admin
